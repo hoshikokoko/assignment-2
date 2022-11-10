@@ -21,6 +21,15 @@ body {
   background-color: white;
 }
 
+.books-table {
+  line-height: 20px;
+}
+
+.form-box {
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
 .top-about {
   margin-left: 30px; 
 }

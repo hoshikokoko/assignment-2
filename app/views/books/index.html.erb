@@ -19,3 +19,18 @@
 </table>
 
 <h2>New book</h2>
+
+<%= form_with model: @book, url: '/books', method: :post do |f| %>
+<div class= "book-form">
+  <div class= "form-box">
+    <p>Title</p>
+    <%= f.text_field :title %>
+   </div>
+  <div class= "form-box">
+    <p>Body</p>
+    <%= f.text_area :body %>
+  </div>
+  <div class= "form-box"><%= f.submit 'Create Book' %></div>
+</div>
+
+<% end %>
