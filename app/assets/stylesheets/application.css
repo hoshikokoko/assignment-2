@@ -13,6 +13,11 @@ a:hover {
   background-color: #333333;
 }
 
+.error-title, .error-message {
+  color: red
+}
+
+
 body {
   margin: 30px;
   font-size: 13px;
@@ -32,4 +37,8 @@ body {
 
 .top-about {
   margin-left: 30px; 
+}
+
+.flash {
+  color: green;
 }
