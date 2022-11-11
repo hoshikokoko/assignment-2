@@ -8,19 +8,21 @@
     </tr>
   </thead>
   <tbody>
+    <% @books.each do |book| %>
     <tr>
-      <td>t</td>
-      <td>b</td>
+      <td><%= book.title %></td>
+      <td><%= book.body %></td>
       <td>s</td>
       <td>e</td>
       <td>d</td>
     </tr>
+    <% end %>
   </tbody>
 </table>
 
 <h2>New book</h2>
 
-<%= form_with model: @book, url: '/books', method: :post do |f| %>
+<%= form_with model: @book do |f| %>
 <div class= "book-form">
   <div class= "form-box">
     <p>Title</p>
