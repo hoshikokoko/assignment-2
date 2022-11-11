@@ -7,4 +7,4 @@
   <%= @book.body %>
 </secton>
 
-<div>|<%= link_to "Back", books_path %></div>
+<div><%= link_to "Edit", edit_book_path(@book.id)%>|<%= link_to "Back", books_path %></div>
